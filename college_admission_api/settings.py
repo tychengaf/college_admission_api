@@ -46,6 +46,7 @@ INSTALLED_APPS += [
 
 INSTALLED_APPS += [
     'admission',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # django_extensions
 SHELL_PLUS = "ipython"
+
+# django.contrib.auth
+AUTH_USER_MODEL = 'user.User'
